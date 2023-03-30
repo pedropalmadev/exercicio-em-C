@@ -1,0 +1,33 @@
+/******************************************************************************
+
+     Pedro de Abreu Palma - 29/03/2023
+     
+     2) Implementar a função verificaIntervalo com e sem if
+
+
+*******************************************************************************/
+#include <stdio.h>
+
+int muda(int n)
+{
+    n = n + 10;
+    return n;
+}
+
+int main()
+{
+    int n = 5;
+    
+    if(n > 0)
+    {
+        n = muda(n);
+        printf("Novo valor de n: %d", n);
+    } 
+    
+    else 
+    {
+        printf("Valor inválido de n");
+    }
+    
+    return 0;
+}
