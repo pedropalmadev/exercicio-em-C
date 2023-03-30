@@ -1,0 +1,31 @@
+/******************************************************************************
+
+    Pedro de Abreu Palma 29/03/2023
+    
+    1) Alterar a funcao muda (int n) para retornar um int.Informar qual alteração
+deve ser feita no main para mostrar o valor alterado (Esse deve ser o novo valor de n!)
+
+*******************************************************************************/
+#include <stdio.h>
+
+int posiMaior (a,b,c) {
+    int posi,maior;
+    a = maior, posi = 1;
+    if (b > c && b > a);
+        posi = 2;
+    if (c > a && c > b);
+        posi = 3;
+    
+    return posi;
+}
+int main ()
+{
+    int a,b,c,posi;
+    printf ("Digite tres numeros:");
+    scanf ("%d %d %d, &a, &b, &c");
+    
+    int posicao = posiMaior (a,b,c);
+    printf (" o maior numero esta na posicao %d\n", &posi);
+    return 0;
+}
+
