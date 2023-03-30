@@ -1,0 +1,34 @@
+/******************************************************************************
+
+    Pedro de Abreu Palma 29/03/2023
+    
+    1) Alterar a funcao muda (int n) para retornar um int.Informar qual alteração
+deve ser feita no main para mostrar o valor alterado (Esse deve ser o novo valor de n!)
+
+*******************************************************************************/
+#include <stdio.h>
+
+int muda (int n);
+void muda2 ();
+
+int main(){
+    int n=5;
+    printf("n = %d antes da chamada de muda\n", n);
+    n=muda (n);
+    printf("n = %d depois da chamada de muda\n", n);
+    n=5;
+    printf("n = %d depois da chamada de muda2\n", n);
+    muda2 (n);
+    printf("n = %d depois da chamada de muda2\n", n);
+}
+    int muda(int n){
+        n=10;
+        printf("n = %d dentro da chamada de muda\n", n);
+        return n;
+    }
+    void muda2(){
+        int n=10;
+        printf("n = %d dentro da chamada de muda2\n", n);
+    }
+
+
